@@ -1,0 +1,20 @@
+## Common Mistakes and How to Fix Them
+
+As a beginner, errors are normal! Here are common issues and solutions:
+1. SyntaxError: unexpected EOF or invalid syntax:
+--> Cause: Missing quotes, parentheses, or a typo (e.g., print("Hello) or Print("Hello")).
+--> Fix: Check for matching quotes (") and use lowercase print.
+2. Command not found (in terminal):
+--> Cause: Python isn’t in PATH or you’re using the wrong command.
+--> Fix: Use python3 instead of python, or reinstall Python with “Add to PATH.”
+3. File not found (when running python hello.py):
+--> Cause: You’re in the wrong folder in the terminal.
+--> Fix: Use cd to navigate to the correct folder (e.g., cd Desktop).
+4. No output:
+--> Cause: You didn’t save the file before running, or the file name doesn’t match.
+--> Fix: Save the file and ensure you’re running the correct file (e.g., python hello.py).
+5. Reading Error Messages:
+--> Python’s error messages tell you what went wrong. For example;
+        SyntaxError: unexpected EOF while parsing
+        
+{Note: This means Python expected something (like a closing quote) but reached the end of the line. Look at the line number mentioned in the error to find the issue.}

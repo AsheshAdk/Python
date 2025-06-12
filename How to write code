@@ -1,0 +1,70 @@
+## Writing the Code
+
+    1. Open Your Editor:
+
+--> If using IDLE, open it from your applications (it comes with Python).
+--> If using VS Code, open it, create a new file, and save it as hello.py (the .py extension tells the computer it’s a Python file).
+--> If using Replit, create a new Python project.
+
+    2. Write the Code: Type this into your editor:
+
+       for eg:-  print("Hello, World!")
+--> print() is a built-in Python function that outputs text to the screen.
+--> "Hello, World!" is a string, a sequence of characters (letters, numbers, or symbols) enclosed in quotes. You can use single quotes (') or double quotes ("), but they must match.
+    3. Save the File:
+
+--> Save it as hello.py in a folder you can find easily (e.g., Desktop or Documents).
+--> If using Replit, it saves automatically.
+## Running the Code
+(a) In IDLE:
+
+--> Press F5 or go to Run > Run Module.
+--> The output will appear in the IDLE shell window: Hello, World!.
+
+(b) In VS Code:
+
+--> Open the terminal in VS Code (View > Terminal).
+--> Navigate to your file’s folder using cd (e.g., cd Desktop if the file is on your Desktop).
+** Type python hello.py (or python3 hello.py on macOS/Linux) and press Enter.
+
+(c) In Replit:
+
+--> Click the “Run” button, and the output appears in the console.
+** In Terminal/Command Prompt:
+->> Navigate to the folder containing hello.py using cd (e.g., cd ~/Desktop).
+--> Run python hello.py (or python3 hello.py).
+
+## Example 1: Multiple Print Statements
+    print("Hello, World!")
+    print("I am learning Python!")
+    print("This is fun!")
+--> Save and run this. You’ll see output like this:
+    Hello, World!
+    I am learning Python!
+    This is fun!
+[Note: Each print() starts a new line automatically.]
+
+## Example 2: Printing Numbers
+    print(42)
+    print(3.14)
+[Note: You don’t need quotes for numbers, i.e. "" or '']
+--> Save and run this. You’ll see output like this:
+    42
+    3.14
+
+## Example 3: Combining Text and Numbers
+    print("My age is", 25)
+[The comma , in print() separates items, adding a space between them.]
+--> Save and run this. You’ll see output like this:
+    My age is 25
+
+## Example 4: Empty Line
+    print("Hello")
+    print()
+    print("World")
+[print() with no arguments prints an empty line.]
+--> Save and run this. You’ll see output like this:
+    Hello
+    (There is new line space)
+    World
+
