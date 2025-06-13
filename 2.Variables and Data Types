@@ -1,0 +1,120 @@
+## What are Variables?
+
+A variable is like a labeled box where you can store information (e.g., a name, number,
+ or text) to use later in your program. 
+Think of it as saving a value with a name so you can refer to it whenever you need it.
+    A variable is a name you give to a value so you can store, use, and change that value 
+    in your program later.
+        A variable is a container (or memory location) used to store data like numbers,
+         text, or other types, which can be accessed and modified by its name.
+Think of a variable like a box with a label on it.
+You can:
+--> Put something inside the box (like a number or a word)
+--> Give the box a name (so you can find it later)
+--> Open the box anytime to see what’s inside
+
+## for example
+                name = "Alice"
+** name is the box (variable name) **
+** "Alice" is the thing inside the box (value) **
+** = means “put this value into the box” **
+
+            print(name)
+Output will be: Alice
+
+## What are Data Types?
+
+Data types tell Python what kind of information is stored in a variable, like text,
+ numbers, or true/false values.
+Different data types let you do different things (e.g., you can add numbers but not text).
+        A data type tells Python what kind of value a variable is storing.
+
+Think of it like:
+--> Is it a number? A word? A list? A yes/no answer?
+--> Python needs to know this so it can treat the value correctly.
+
+for examples:-
+age = 20         # This is a number → int
+name = "Alice"   # This is text → str (string)
+height = 5.5     # This is a decimal → float
+is_happy = True  # This is a yes/no → bool (boolean)
+
+## Common Data Types:-
+
+1. String (str): Text, like names or words, enclosed in quotes (" or ').
+    Example: "Hello", 'Python', "123" (even numbers in quotes are strings).
+2. Integer (int): Whole numbers, like 5, -10, or 0.
+3. Float (float): Decimal numbers, like 3.14, -0.5, or 2.0.
+4. Boolean (bool): True or false values, written as True or False (capitalized).
+
+for examples:-
+
+name = "Bob"        # String
+age = 25            # Integer
+height = 5.9        # Float
+is_student = True   # Boolean
+
+print(name)         # Outputs: Bob
+print(age)          # Outputs: 25
+print(height)       # Outputs: 5.9
+print(is_student)   # Outputs: True
+
+## How to Check a Data Type:
+
+Use the type() function to see a variable’s data type:
+--> print(type(name))   # Outputs: <class 'str'>
+--> print(type(age))    # Outputs: <class 'int'>
+--> print(type(height)) # Outputs: <class 'float'>
+
+## Using Variables:-
+    You can use variables to store data and reuse it. Let’s combine variables with 
+    print() and do simple operations.
+
+## Example 1: Combining Variables in Print:
+    name = "Alice"
+    age = 20
+    print("My name is", name, "and I am", age, "years old.")
+--> Output: My name is Alice and I am 20 years old.
+--> The commas in print() add spaces between items.
+
+Example 2: Basic Math with Variables:
+    apples = 5
+    oranges = 3
+    total_fruit = apples + oranges
+    print("I have", total_fruit, "fruits.")
+--> Output: I have 8 fruits.
+--> Integers and floats can be used in math operations like +, -, * (multiply),
+ or / (divide).
+
+Example 3: Updating Variables:
+You can change a variable’s value:
+    score = 10
+    print(score)  # Outputs: 10
+    score = 15    # Update the value
+    print(score)  # Outputs: 15
+
+Step 4: Simple Operations with Data Types
+Different data types support different operations.
+    Strings
+        Concatenation: Combine strings using +.
+                        first = "Hello"
+                        last = "World"
+                        full = first + " " + last
+                        print(full)  # Outputs: Hello World
+    [Note: You can’t add a string and a number directly (e.g., "Age: " + 20 
+    causes an error).]
+    
+    Integers and Floats
+        Basic math operations:
+                        a = 10
+                        b = 3
+                        print(a + b)  # Outputs: 13
+                        print(a - b)  # Outputs: 7
+                        print(a * b)  # Outputs: 30
+                        print(a / b)  # Outputs: 3.333... (division always gives a float)
+                
+    Booleans
+        Used for true/false logic (we’ll explore this more in Chapter 4 with conditions).
+                        is_sunny = True
+                        print(is_sunny)  # Outputs: True
+
