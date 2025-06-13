@@ -1,9 +1,12 @@
 ## What are Variables?
 
-A variable is like a labeled box where you can store information (e.g., a name, number, or text) to use later in your program. 
+A variable is like a labeled box where you can store information (e.g., a name, number,
+ or text) to use later in your program. 
 Think of it as saving a value with a name so you can refer to it whenever you need it.
-    A variable is a name you give to a value so you can store, use, and change that value in your program later.
-        A variable is a container (or memory location) used to store data like numbers, text, or other types, which can be accessed and modified by its name.
+    A variable is a name you give to a value so you can store, use, and change that value 
+    in your program later.
+        A variable is a container (or memory location) used to store data like numbers,
+         text, or other types, which can be accessed and modified by its name.
 Think of a variable like a box with a label on it.
 You can:
 --> Put something inside the box (like a number or a word)
@@ -21,7 +24,8 @@ Output will be: Alice
 
 ## What are Data Types?
 
-Data types tell Python what kind of information is stored in a variable, like text, numbers, or true/false values.
+Data types tell Python what kind of information is stored in a variable, like text,
+ numbers, or true/false values.
 Different data types let you do different things (e.g., you can add numbers but not text).
         A data type tells Python what kind of value a variable is storing.
 
@@ -63,8 +67,10 @@ Use the type() function to see a variable’s data type:
 --> print(type(height)) # Outputs: <class 'float'>
 
 ## Using Variables:-
-    You can use variables to store data and reuse it. Let’s combine variables with print() and do simple operations.
-Example 1: Combining Variables in Print:
+    You can use variables to store data and reuse it. Let’s combine variables with 
+    print() and do simple operations.
+
+## Example 1: Combining Variables in Print:
     name = "Alice"
     age = 20
     print("My name is", name, "and I am", age, "years old.")
@@ -77,7 +83,8 @@ Example 2: Basic Math with Variables:
     total_fruit = apples + oranges
     print("I have", total_fruit, "fruits.")
 --> Output: I have 8 fruits.
---> Integers and floats can be used in math operations like +, -, * (multiply), or / (divide).
+--> Integers and floats can be used in math operations like +, -, * (multiply),
+ or / (divide).
 
 Example 3: Updating Variables:
 You can change a variable’s value:
@@ -94,7 +101,8 @@ Different data types support different operations.
                         last = "World"
                         full = first + " " + last
                         print(full)  # Outputs: Hello World
-    [Note: You can’t add a string and a number directly (e.g., "Age: " + 20 causes an error).]
+    [Note: You can’t add a string and a number directly (e.g., "Age: " + 20 
+    causes an error).]
     
     Integers and Floats
         Basic math operations:
