@@ -1,0 +1,26 @@
+## class
+A class defines the attributes (data) and methods (functions) that the objects
+created from the class will have.
+
+## object 
+An object is an instance of a class.
+
+## variable
+A variable is a named reference to a value or object stored in memory.
+It acts as a container that holds data, which can be accessed, modified,
+or used in computations throughout a program.
+
+## attribute
+Attributes are the properties or characteristics of an object and
+are accessed using dot notation (e.g., object.attribute)
+
+## function
+Functions help organize code, promote reusability, and make programs easier
+to understand and maintain. They are defined using the def keyword and can be
+called by their name with appropriate arguments.
+
+## method 
+A method is a function that is defined inside a class and is associated
+with an object (instance) or the class itself.
+    like:- def keyword, self , cls, __init__, __str__
+    
