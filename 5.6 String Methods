@@ -47,3 +47,21 @@ title()	Converts the first character of each word to upper case
 translate()	Returns a translated string
 upper()	Converts a string into upper case
 zfill()	Fills the string with a specified number of 0 values at the beginning
+
+
+
+
+
+(2) Common string methods (all return new strings)
+Method	Description
+upper()	Converts to uppercase
+lower()	Converts to lowercase
+strip()	Removes leading/trailing whitespace
+replace(old, new)	Replaces substrings
+split(sep)	Splits into a list
+join(iterable)	Joins a list into a string
+find(sub)	Returns index of first occurrence
+startswith(prefix)	Checks beginning
+endswith(suffix)	Checks ending
+capitalize()	Capitalizes first letter
+title()	Capitalizes each word
