@@ -1,3 +1,4 @@
+### Slicing
 You can return a range of characters by using the slice syntax.
 Specify the start index and the end index, separated by a colon, to return a part of the string.
 
@@ -6,6 +7,150 @@ Get the characters from position 2 to position 5 (not included):
 Code:-
 b = "Hello, World!"
 print(b[2:5])
-Output:-
-llo
+Output:- llo
 Note: The first character has index 0.
+
+### Slice From the Start
+By leaving out the start index, the range will start at the first character:
+
+###Example;
+Get the characters from the start to position 5 (not included):
+Code:-
+b = "Hello, World!"
+print(b[:5])
+Output:- Hello
+
+### Slice To the End
+By leaving out the end index, the range will go to the end:
+
+###Example;
+Get the characters from position 2, and all the way to the end:
+Code:-
+b = "Hello, World!"
+print(b[2:])
+Output:- llo, World!
+
+### Negative Indexing
+Use negative indexes to start the slice from the end of the string:
+###Example;
+Get the characters:
+
+From: "o" in "World!" (position -5)
+To, but not included: "d" in "World!" (position -2):
+Code:-
+b = "Hello, World!"
+print(b[-5:-2])
+Output:- orl
+
+#NOTE:-
+b[start:end] returns characters from index start up to (but not including) end.
+
+Omitting start ([:end]) slices from the beginning.
+
+Omitting end ([start:]) slices to the end.
+
+Negative indices count from the end of the string (e.g., -1 is the last character).
+
+###Additional examples;
+b = "Hello, World!"
+
+# From index 2 to 5 → "llo"
+print(b[2:5])
+
+# From start to index 5 → "Hello"
+print(b[:5])
+
+# From index 2 to end → "llo, World!"
+print(b[2:])
+
+# Negative slice: from index -5 ('o' of "World") to -2 ('d' not included) → "orl"
+print(b[-5:-2])
+Output:- orl
+BUT if code:-
+b = "Hello, World!"
+print(b[:-2])
+Output:- Hello, Worl
+BUT if code:-
+b = "Hello, World!"
+print(b[-2:])
+Output:- d!
+BUT if code:-
+b = "Hello, World!"
+print(b[-5:])
+Output:- orld!
+BUT if code:-
+b = "Hello, World!"
+print(b[:-5])
+Output:- Hello, W
+
+
+
+How Negative Indices Work
+Negative indices count from the end of the string:
+
+-1 → last character
+
+-2 → second last character
+
+-3 → third last, and so on.
+
+For the string b = "Hello, World!", here's how positive and negative indices map:
+
+Character:-	H	e	l	l	o	,		W	o	r	l	d	!
+Positive:-	0	1	2	3	4	5	6	7	8	9	10	11	12
+Negative:-	-13	-12	-11	-10	-9	-8	-7	-6	-5	-4	-3	-2	-1
+
+Negative Slice Syntax
+b[start:end] with negative start and/or end works the same way:
+
+start is included, end is excluded.
+
+The slice goes from left to right (even if indices are negative).
+
+###Example;
+python code:-
+b = "Hello, World!"
+print(b[-5:-2])   # Output: "orl"
+-5 points to the 'o' of "World!" (see table: index -5 = 'o')
+
+-2 points to the 'd' (index -2 = 'd')
+
+Slice goes from -5 (included) up to but not including -2.
+That means characters at positions -5, -4, -3 → 'o', 'r', 'l' → "orl".
+
+###More Examples;
+python code:-
+b = "Hello, World!"
+
+# Last 3 characters
+print(b[-3:])     # Output: "ld!"   (from -3 to end)
+
+# All characters except last 2
+print(b[:-2])     # Output: "Hello, Worl"  (from start to -2, exclusive)
+
+# Entire string (negative start and end omitted)
+print(b[-13:])    # Output: "Hello, World!" (same as b[:])
+print(b[:-0])     # This is same as b[:] but avoid; -0 is 0.
+
+# Reverse a string using negative step (extra)
+print(b[::-1])    # Output: "!dlroW ,olleH"
+Common Pitfalls
+Negative slice with start > end (in negative values)
+Since -5 is less than -2 (because -5 < -2), the slice goes forward.
+If you write b[-2:-5], you get an empty string because start is after end.
+
+Mixing positive and negative indices works fine:
+
+python code:-
+print(b[7:-2])   # From index 7 ('W') to -2 ('d' excl.) → "Worl"
+Out-of-range negative indices
+Using -100 is fine; Python treats it as the start (or 0).
+b[-100:5] → same as b[:5].
+
+Visualizing the Slice Direction
+Negative slicing still moves left to right in the string.
+Think of negative indices as labels: the character with a smaller negative number (e.g., -5) comes before a character with a larger negative number (e.g., -2) in the original string.
+
+Key rule:
+b[start:end] returns characters from start up to, but not including, end. This holds regardless of sign.
+
