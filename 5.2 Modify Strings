@@ -1,0 +1,181 @@
+Python has a set of built-in methods that you can use on strings.
+
+#NOTE:-Related methods
+Method	Example	Output
+upper()	"Hello".upper()	"HELLO"
+lower()	"Hello".lower()	"hello"
+capitalize()	"hello world".capitalize()	"Hello world"
+title()	"hello world".title()	"Hello World"
+swapcase()	"Hello".swapcase()	"hELLO"
+
+(1) Upper Case:-
+The upper() method, which returns a new string with all alphabetic characters converted to uppercase But
+Non-alphabetic characters (like commas, spaces, exclamation marks, numbers) remain unchanged.
+
+###Example;
+The upper() method returns the string in upper case:
+code:-
+a = "Hello, World!"
+print(a.upper())
+Output:- HELLO, WORLD!
+
+###Example combining with slicing;
+python code:-
+b = "Hello, World!"
+print(b[:5].upper())    #Output:- "HELLO"  (slice then uppercase)
+print(b[7:].lower())    #Output:- "world!" (slice then lowercase)
+
+(2) Lower Case:-
+The lower() method, which returns a new string with all alphabetic characters converted to lowercase.But
+Non-alphabetic characters (commas, spaces, punctuation, numbers) stay the same.
+
+###Example;
+The lower() method returns the string in lower case:
+code:-
+a = "Hello, World!"
+print(a.lower())
+Output:- hello, world!
+
+###Example combining with slicing;
+Code:-
+b = "Hello, World!"
+print(b[7:].lower())    #Output:- "world!" (slice then lowercase)
+
+###use cases Examples;
+python code:-
+# Case‑insensitive comparison
+user_input = "YES"
+if user_input.lower() == "yes":
+    print("Confirmed")   #Output:- "Confirmed"
+# Cleaning text for processing
+text = "Python Is FUN!"
+clean_text = text.lower()   #Output:- "python is fun!"
+
+(3) Remove Whitespace:-the strip() method, which removes leading and trailing whitespace
+(spaces, tabs, newlines, etc.) from a string.
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+###Example;
+The strip() method removes any whitespace from the beginning or the end:
+
+a = " Hello, World! "  #here is space before H and after d. so it remove space
+print(a.strip())       {The space before "Hello" and the space after "!" are removed.
+                          Whitespace inside the string (between words) is preserved.}
+Output:-"Hello, World!"
+
+#NOTE:-Related methods
+Method	Effect	Example	Output
+strip()	Removes whitespace from both ends	" hello ".strip()	"hello"
+lstrip()	Removes whitespace only from the left (start)	" hello ".lstrip()	"hello "
+rstrip()	Removes whitespace only from the right (end)	" hello ".rstrip()	" hello"
+
+(4) Replace String:-The replace() method, which returns a new string where all occurrences 
+of a specified substring are replaced with another substring.
+
+###Example;
+The replace() method replaces a string with another string:
+Code:-
+a = "Hello, World!"         # "H" is replaced with "J" → "Jello, World!"
+                            The original string a remains unchanged (strings are immutable).
+print(a.replace("H", "J"))
+Output:- "Jello, World!"
+
+### Python Syntax:- string.replace(old, new, count)
+old – substring to be replaced
+new – substring to replace with
+count (optional) – number of occurrences to replace (default: all)
+
+###More examples;
+python code:-
+text = "one one was a race horse, two two was one too."         ## Replace all occurrences
+print(text.replace("one", "three"))  
+Output:- "three three was a race horse, two two was three too."
+
+print(text.replace("one", "three", 2))                         ## Replace only first 2 occurrences
+Output:- "three three was a race horse, two two was one too."
+
+print(text.replace("one", "X").replace("two", "Y"))           ## Replace multiple different substrings (chain)
+Output:- "X X was a race horse, Y Y was X too."
+
+(5) Split String:-The split() method, which divides a string into a list of substrings
+based on a specified separator.
+The split() method returns a list where the text between the specified separator
+becomes the list items.
+
+###Example;
+The split() method splits the string into substrings if it finds instances of the separator.
+code:-
+a = "Hello, World!"      #The separator "," tells Python to cut the string wherever a comma appears.
+                          The result is a list with two items: "Hello" and " World!"
+                          (note the space before World! because the split keeps the rest of the characters).
+print(a.split(","))                  
+Output:- ['Hello', ' World!']
+
+###More examples;
+text = "apple,banana,cherry"
+print(text.split(","))     #Output:- ['apple', 'banana', 'cherry']
+
+# Default separator is any whitespace (space, tab, newline)
+sentence = "Hello world Python"
+print(sentence.split())    #Output:- ['Hello', 'world', 'Python']
+
+# Limit the number of splits using maxsplit parameter
+data = "one,two,three,four"
+print(data.split(",", 2))  #Output:- ['one', 'two', 'three,four']
+
+#IMPORTANT NOTE:- String method is just Opposite method ofjoin()
+python code:-
+items = ['Hello', 'World!']
+print(" ".join(items))     #Output 'Hello World!'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
