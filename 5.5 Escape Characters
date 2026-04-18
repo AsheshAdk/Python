@@ -1,0 +1,20 @@
+(1) Escape Character:-The escape characters in Python – special sequences that start with a backslash \ and
+represent characters that are hard to type or have special meaning.
+
+To insert characters that are illegal in a string, use an escape character.
+An escape character is a backslash \ followed by the character you want to insert.
+
+(2) Common Escape Characters:-
+
+Escape Sequence	Meaning	Example	Output
+\'	Single quote	print('It\'s nice')	It's nice
+\"	Double quote	print("He said \"Hi\"")	He said "Hi"
+\\	Backslash	print("C:\\Users\\Name")	C:\Users\Name
+\n	New line	print("Hello\nWorld")	Hello
+World
+\r	Carriage return	print("Hello\rWorld")	World (overwrites)
+\t	Tab	print("Hello\tWorld")	Hello World
+\b	Backspace	print("Hello\bWorld")	HellWorld (deletes 'o')
+\f	Form feed	print("Hello\fWorld")	(page break, rarely used)
+\ooo	Octal value (o = 0-7)	print("\110\145\154\154\157")	Hello (ASCII values)
+\xhh	Hex value (h = 0-9, A-F)	print("\x48\x65\x6c\x6c\x6f")	Hello
