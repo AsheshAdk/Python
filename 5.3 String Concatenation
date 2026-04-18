@@ -1,0 +1,46 @@
+(1)String Concatenation:-To concatenate, or combine, two strings you can use the + operator.
+
+###Example:-
+Merge variable a with variable b into variable c:
+Code:-
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+Output: "HelloWorld"
+
+#NOTE:- Notice there's no space between "Hello" and "World" because + simply joins the strings exactly as they are.
+
+(2) Adding a space:-To include a space, you can add it explicitly.
+
+Python Code:-
+a = "Hello"
+b = "World"
+c = a + " " + b 
+print(c)
+Output:- "Hello World"
+
+(3) Use a formatted string (f-string) – more readable:
+
+Python Code:-
+a = "Hello"
+b = "World"
+c = f"{a} {b}"
+print(c)
+Output:- "Hello World"
+
+(4) Other ways to concatenate
+
+Method	Example	Output
++ operator	"Hello" + "World"	"HelloWorld"
+join() method	" ".join(["Hello", "World"])	"Hello World"
+f-strings	f"{a} {b}"	"Hello World"
+format()	"{} {}".format(a, b)	"Hello World"
+
+#Important note
+You can only concatenate strings with +. To combine a string with a number, you must convert the number first:
+Code:-
+age = 25
+message = "I am " + str(age) + " years old"
+print(message)
+Output:- I am 25 years old
