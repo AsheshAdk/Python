@@ -1,0 +1,55 @@
+(1) F-Strings:-
+F-String was introduced in Python 3.6, and is now the preferred way of formatting strings.
+To specify a string as an f-string, simply put an f in front of the string literal, and
+add curly brackets {} as placeholders for variables and other operations.
+
+###Example
+Create an f-string:
+Code:-
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+Output:- My name is John, I am 36
+
+(2) format() method:-
+python code:-
+age = 36
+txt = "My name is John, I am {}".format(age)
+print(txt)
+Output:- My name is John, I am 36
+(3) Convert explicitly with str()
+python code:-
+age = 36
+txt = "My name is John, I am " + str(age)
+print(txt)
+Output:- My name is John, I am 36
+
+(4) Placeholders and Modifiers:-
+A placeholder can contain variables, operations, functions, and modifiers to format the value.
+
+###Example:-
+Add a placeholder for the price variable:
+COde:-
+price = 59                              ###{price} is a placeholder – it gets replaced by the current value of the variable price.
+                                            The f before the string tells Python to format the string by evaluating the expressions inside {}
+txt = f"The price is {price} dollars"
+print(txt)
+Output:- The price is 59 dollars
+
+(5) Modifiers (format specifiers) inside the placeholder:-
+A modifier is included by adding a colon : followed by a legal formatting type, like .2f which means fixed point number with 2 decimals:
+
+###Example with modifier
+python code:-
+price = 59.9876
+txt = f"The price is {price:.2f} dollars"
+print(txt)
+Output:- The price is 59.99 dollars
+
+#NOTE:-Here :.2f is the modifier:
+
+(a) : starts the format specifier
+
+(b) .2 means 2 decimal places
+
+(c) f means fixed-point number
